@@ -232,7 +232,7 @@ main { padding: 52px 0 70px; }
 .post-jp { color: var(--ai); font-weight: 700; letter-spacing: .05em; margin-top: 6px; }
 
 .polaroid.big { transform: rotate(.8deg); margin-bottom: 36px; }
-.polaroid.big img { aspect-ratio: 4/4.4; object-fit: cover; }
+.polaroid.big img { aspect-ratio: auto; object-fit: contain; }
 
 .prose { max-width: 38em; }
 .prose p { margin-bottom: 1.25em; font-size: 1.07rem; }
