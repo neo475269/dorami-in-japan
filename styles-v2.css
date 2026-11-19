@@ -285,3 +285,33 @@ main { padding: 52px 0 70px; }
   .post-head h2 { font-size: 1.7rem; }
   .profile-card { flex-direction: column; text-align: center; }
 }
+
+/* ---------- week tiles (homepage, added 2026-11-19) ---------- */
+.week-grid { display: grid; gap: 18px; }
+.week-tile {
+  display: flex; gap: 18px; align-items: center;
+  background: #fff;
+  border: 3px solid var(--ink); border-radius: 16px;
+  padding: 18px 20px;
+  text-decoration: none; color: inherit;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.week-tile:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink); }
+.week-badge {
+  flex-shrink: 0;
+  width: 56px; height: 56px; border-radius: 50%;
+  border: 3px solid var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  transform: rotate(-6deg);
+}
+.week-tile h3 { font-size: 1.2rem; margin-bottom: 2px; }
+.week-tile h3 .jp { font-size: .85em; color: var(--ai); }
+.week-tile p { color: #6b6459; font-size: .92rem; }
+.week-tile .week-count { font-weight: 700; color: var(--aka); font-size: .85rem; margin-top: 2px; }
+@media (max-width: 720px) {
+  .week-tile { padding: 14px 16px; }
+  .week-badge { width: 48px; height: 48px; font-size: .9rem; }
+}
